@@ -1,16 +1,32 @@
-#include "my_header.h"
-#include <stdio.h>
+#include "TP_lib.h"
 
-unsigned char s1=3,n=0;
-
-int main(void)
+void main (void)
 {
-while (1)
-{
-s1=s1+3.n ;
-n++;
-printf("s1 = %d",s1);
-getchar();
+unsigned short int points = 0;
+unsigned short int resultat= 0;
+    do
+    {
+        resultat = LancerDe ();
+         if ( resultat == 2 || resultat == 4 || resultat == 6)
+         {
+             points = points + resultat;
+         }
 
-}
+         else if ( resultat == 3)
+
+         {
+
+             points = points * 2 ;
+
+         }
+
+         else
+
+         {
+         points = points - 2 ;
+         }
+    }
+
+    while (resultat != 1);
+
 }
