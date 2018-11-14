@@ -1,17 +1,16 @@
-#include "TP_lib.h"
 #include "my_header.h"
 #include <stdio.h>
 
+unsigned char s1=3,n=0;
 
 int main(void)
 {
-short resultat, i=0;
-while (i<10)
+while (1)
 {
-resultat = LancerDe ();
-i++;
-printf("Le resultat est %d ",resultat);
+s1=s1+3.n ;
+n++;
+printf("s1 = %d",s1);
 getchar();
-}
-}
 
+}
+}
