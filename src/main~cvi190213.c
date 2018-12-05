@@ -8,8 +8,7 @@ int main(void)
 {
 char prenom  [100];
 char nom  [100];
-char annee [100] ;
-int age;
+unsigned int annee [100],age;
 
 
 
@@ -18,10 +17,12 @@ scanf("%s",prenom);
 printf ("Nom:");
 scanf("%s",nom);
 printf ("Annee de naissance:");
-scanf("%s",annee);
-age = 2018-atoi(annee);
+scanf("%lu",annee);
+atoi(annee)=age;
+age=2018
 
-printf ("Je m'appelle %s %s et j'ai %d ans",prenom ,nom ,age);
+
+printf ("Je m'appelle %s %s et j'ai %d ans",prenom ,nom ,age );
 getchar();
 
 }
