@@ -1,27 +1,27 @@
-#include <ansi_c.h>
-#include "my_header.h"
-#include <userint.h>
-#include <string.h>
 
+			#include "my_header.h"
+#include <ansi_c.h>
 
 int main(void)
 {
-char prenom  [100];
-char nom  [100];
-char annee [100] ;
-int age;
+	
+	char L1[80]="nom: pentagone_B";
+	char L2[80]="nombre points: 5";
+	char L3[80]= "Cordonnees: 10 20 30 20 30 40 43 53 35 65";
+	int i;
+    char nb_pts[100];
+	char nom_fig[80];
+	
+	char x[5];
+	char y[5];
+	
+	sscanf(L1,"%*s %s",nom_fig);
+	sscanf(L2,"%*s %*s %s",nb_pts);
+	sscanf(L3,"%*s %s %s %s %s %s %s %s %s %s %s",x[0], &y[0], &x[1], &y[1], &x[2], &y[2], &x[3], &y[3], &x[4], &y[4]);
 
+	
+	printf("la figure %s a %s sommets",nom_fig, nb_pts);
 
-
-printf ("Prenom:");
-scanf("%s",prenom);
-printf ("Nom:");
-scanf("%s",nom);
-printf ("Annee de naissance:");
-scanf("%s",annee);
-age = 2018-atoi(annee);
-
-printf ("Je m'appelle %s %s et j'ai %d ans",prenom ,nom ,age);
-getchar();
-
+	getchar();
+ 
 }
